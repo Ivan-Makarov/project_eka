@@ -1,0 +1,80 @@
+$lightblue: #ecf0f4;
+$darkblue: #667799;
+$midblue: #a4bcce;
+$green: #00aa00;
+$article-background-color: $lightblue;
+$article-font-color: $darkblue;
+$link-color: $green;
+
+.title-img-wrapper {
+    overflow: hidden;
+    height: 360px;
+    position: relative;
+}
+
+.title-img {
+    width: 735px;
+    position: absolute;
+    top: -115px;
+}
+
+.article {
+    box-sizing: border-box;
+    width: 735px;
+    padding: 30px 30px 0;
+    background-color: $article-background-color;
+    color: $article-font-color;
+
+    h1 {
+        line-height: 30px;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    a:hover {
+        color: $link-color;
+    }
+
+    .preamble {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .article-item {
+        margin-bottom: 30px;
+        padding-left: 150px;
+        background-repeat: no-repeat;
+        background-position: 0 7px;
+        &.item-design {
+            background-image: url('../img/windows_design.png');
+        }
+        &.item-color {
+            background-image: url('../img/windows-color.png');
+        }
+        &.item-material {
+            background-image: url('../img/windows_material.png');
+        }
+        &.item-dimensions {
+            background-image: url('../img/windows_dimensions.png');
+        }
+    }
+
+    .highlight {
+        border-top: 2px solid $midblue;
+        border-bottom: 2px solid $midblue;
+        padding: 20px 0;
+        font-weight: 700;
+    }
+
+    .epilogue {
+        border-top: 2px solid $midblue;
+        padding: 30px 120px 30px 0;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
