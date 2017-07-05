@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 $lightblue: #ecf0f4;
 $darkblue: #667799;
 $midblue: #a4bcce;
@@ -64,7 +66,8 @@ $link-color: $green;
     }
 
     .item-img {
-        height: 100%;
+        position: absolute;
+        // height: 100%;
     }
 
     .article-item {
