@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+$lightblue: #ecf0f4;
+$darkblue: #667799;
+$midblue: #a4bcce;
+$midblue2: #dde5f0;
+$green: #00aa00;
+$article-background-color: $lightblue;
+$article-font-color: $darkblue;
+$link-color: $green;
+
+.title-img-wrapper {
+    overflow: hidden;
+    height: 360px;
+    position: relative;
+}
+
+.title-img {
+    width: 735px;
+    position: absolute;
+}
+
+.article {
+    box-sizing: border-box;
+    width: 735px;
+    padding: 30px 30px 0;
+    background-color: $article-background-color;
+    color: $article-font-color;
+
+    h1 {
+        margin-top: 0;
+        font-weight: 300;
+    }
+
+    a:hover {
+        color: $link-color;
+    }
+
+    .preamble {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .item-img-wrapper {
+        position: relative;
+        width: 278px;
+        margin-right: 20px;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .item-img {
+        position: absolute;
+        &.img-chill {
+            top: -70px;
+        }
+        &.img-garden {
+            left: -80px;
+            height: 105%;
+        }
+    }
+
+    .article-item {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .article-item:first-of-type {
+        margin-top: 40px;
+    }
+
+    .article-item:nth-of-type(even) {
+        flex-direction: row-reverse;
+        .item-img-wrapper {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+    }
+
+    .item-no-photo {
+        padding-left: 140px;
+        background-repeat: no-repeat;
+        background-image: url('../img/balcony_extra.png');
+    }
+
+    .attention {
+        margin-bottom: 40px;
+        padding: 25px 120px 10px 140px;
+        background-color: $midblue2;
+        background-repeat: no-repeat;
+        background-image: url('../img/balcony_attention.png');
+        background-position: 40px 50%;
+        span {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-weight: 700;
+        }
+        p {
+            font-style: italic;
+            margin-top: 5px;
+        }
+    }
+
+    .highlight {
+        border-top: 2px solid $midblue;
+        padding: 20px 40px 20px 0;
+        font-weight: 700;
+    }
+}
