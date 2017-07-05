@@ -1,54 +1,93 @@
 $lightblue: #ecf0f4;
 $darkblue: #667799;
+$midblue: #a4bcce;
 $green: #00aa00;
-
 $article-background-color: $lightblue;
 $article-font-color: $darkblue;
 $link-color: $green;
 
-.info {
+.title-img-wrapper {
+    overflow: hidden;
+    height: 360px;
+    position: relative;
+}
+
+.title-img {
     width: 735px;
-    padding: 0 30px;
+    position: absolute;
+    top: -115px;
+}
+
+.article {
+    box-sizing: border-box;
+    width: 735px;
+    padding: 30px 30px 0;
     background-color: $article-background-color;
     color: $article-font-color;
+
     h1 {
         line-height: 30px;
         font-weight: 300;
+        margin-top: 0;
     }
-    a {
+
+    a:hover {
         color: $link-color;
     }
+
     .preamble {
         font-size: 16px;
         line-height: 20px;
     }
+
     p {
         font-size: 14px;
         line-height: 22px;
+        &.with-bottom-img::after {
+            content: '';
+            display: block;
+            height: 125px;
+            margin: 20px 0;
+            background-image: url('../img/storage_log_cabin_room.jpg');
+            background-repeat: no-repeat;
+            background-position: 0 81%;
+            background-size: 100%;
+        }
     }
-    .item-img {
-        width: 300px;
+
+    .item-img-wrapper {
+        position: relative;
+        width: 278px;
         margin-right: 20px;
+        overflow: hidden;
+        flex-shrink: 0;
     }
-}
 
-.question {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.question:first-of-type {
-    margin-top: 40px;
-}
-
-.question:nth-of-type(even) {
-    flex-direction: row-reverse;
     .item-img {
-        margin-right: 0;
-        margin-left: 20px;
+        height: 100%;
     }
-}
 
-.item-img-wrapper {
-    position: relative;
+    .article-item {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .article-item:first-of-type {
+        margin-top: 40px;
+    }
+
+    .article-item:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        .item-img-wrapper {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+    }
+
+    .epilogue {
+        border-top: 2px solid $midblue;
+        padding: 20px 0;
+        font-weight: 700;
+    }
 }
