@@ -91,7 +91,7 @@ div.base > div.info > p.preamble {
 .info .item-no-photo {
     padding-left: 140px;
     background-repeat: no-repeat;
-    background-image: url("./img/balcony_extra.png");
+    background-image: url("balcony_extra.png");
 }
 
 .info .attention {
@@ -99,7 +99,7 @@ div.base > div.info > p.preamble {
     padding: 25px 120px 10px 140px;
     background-color: #dde5f0;
     background-repeat: no-repeat;
-    background-image: url("./img/balcony_attention.png");
+    background-image: url("balcony_attention.png");
     background-position: 40px 50%;
 }
 
@@ -118,4 +118,12 @@ div.base > div.info > p.preamble {
     border-top: 2px solid #a4bcce;
     padding: 20px 40px 0 0;
     font-weight: 700;
+}
+
+.info .epilogue {
+    border-top: 2px solid #a4bcce;
+    padding: 30px 120px 0 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
 }

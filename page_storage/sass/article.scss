@@ -61,7 +61,7 @@ div.base > div.info > p.preamble {
             display: block;
             height: 125px;
             margin: 20px 0;
-            background-image: url('./img/storage_log_cabin_room.jpg');
+            background-image: url('storage_log_cabin_room.jpg');
             background-repeat: no-repeat;
             background-position: 0 81%;
             background-size: 100%;
@@ -103,5 +103,13 @@ div.base > div.info > p.preamble {
         border-top: 2px solid $midblue;
         padding-top: 20px;
         font-weight: 700;
+    }
+
+    .epilogue {
+        border-top: 2px solid $midblue;
+        padding: 30px 120px 0 0;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
     }
 }
