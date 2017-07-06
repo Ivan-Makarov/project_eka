@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+.title-img-wrapper {
+    overflow: hidden;
+    height: 360px;
+    position: relative;
+}
+
+.title-img {
+    width: 735px;
+    position: absolute;
+    top: -115px;
+}
+
+.article {
+    box-sizing: border-box;
+    width: 735px;
+    padding: 30px 30px 0;
+    background-color: #ecf0f4;
+    color: #667799;
+}
+
+.article h1 {
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.article a:hover {
+    color: #00aa00;
+}
+
+.article .preamble {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.article .article-item {
+    margin-bottom: 30px;
+    padding-left: 150px;
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+}
+
+.article .article-item.item-design {
+    background-image: url("../img/windows_design.png");
+}
+
+.article .article-item.item-color {
+    background-image: url("../img/windows-color.png");
+}
+
+.article .article-item.item-material {
+    background-image: url("../img/windows_material.png");
+}
+
+.article .article-item.item-dimensions {
+    background-image: url("../img/windows_dimensions.png");
+}
+
+.article .highlight {
+    border-top: 2px solid #a4bcce;
+    border-bottom: 2px solid #a4bcce;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.article .epilogue {
+    border-top: 2px solid #a4bcce;
+    padding: 30px 120px 30px 0;
+    font-size: 20px;
+    line-height: 26px;
+}

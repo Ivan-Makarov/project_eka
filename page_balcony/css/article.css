@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.title-img-wrapper {
+    overflow: hidden;
+    height: 360px;
+    position: relative;
+}
+
+.title-img {
+    width: 735px;
+    position: absolute;
+}
+
+.article {
+    box-sizing: border-box;
+    width: 735px;
+    padding: 30px 30px 0;
+    background-color: #ecf0f4;
+    color: #667799;
+}
+
+.article h1 {
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.article a:hover {
+    color: #00aa00;
+}
+
+.article .preamble {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.article .item-img-wrapper {
+    position: relative;
+    width: 278px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.article .item-img {
+    position: absolute;
+}
+
+.article .item-img.img-chill {
+    top: -70px;
+}
+
+.article .item-img.img-garden {
+    left: -80px;
+    height: 105%;
+}
+
+.article .article-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.article .article-item:first-of-type {
+    margin-top: 40px;
+}
+
+.article .article-item:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.article .article-item:nth-of-type(even) .item-img-wrapper {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.article .item-no-photo {
+    padding-left: 140px;
+    background-repeat: no-repeat;
+    background-image: url("../img/balcony_extra.png");
+}
+
+.article .attention {
+    margin-bottom: 40px;
+    padding: 25px 120px 10px 140px;
+    background-color: #dde5f0;
+    background-repeat: no-repeat;
+    background-image: url("../img/balcony_attention.png");
+    background-position: 40px 50%;
+}
+
+.article .attention span {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+.article .attention p {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.article .highlight {
+    border-top: 2px solid #a4bcce;
+    padding: 20px 40px 20px 0;
+    font-weight: 700;
+}
