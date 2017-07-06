@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 $lightblue: #ecf0f4;
 $darkblue: #667799;
 $midblue: #a4bcce;
@@ -8,19 +7,27 @@ $article-background-color: $lightblue;
 $article-font-color: $darkblue;
 $link-color: $green;
 
-.title-img-wrapper {
+img {
+    vertical-align: middle;
+}
+
+div.base > img {
+    width: 100%;
+    height: auto;
+}
+
+div.base > div.info {
+    padding: 15px 30px;
     overflow: hidden;
-    height: 360px;
-    position: relative;
+    font: 300 14px/18px 'Roboto', Arial, Tahoma, Verdana, sans-serif;
 }
 
-.title-img {
-    width: 735px;
-    position: absolute;
-    top: -115px;
+div.base > div.info > div.question > span,
+div.base > div.info > p.preamble {
+    font: 400 16px/20px 'Roboto', Arial, Tahoma, Verdana, sans-serif;
 }
 
-.article {
+.info {
     box-sizing: border-box;
     width: 735px;
     padding: 30px 30px 0;
@@ -33,8 +40,11 @@ $link-color: $green;
         margin-top: 0;
     }
 
-    a:hover {
+    a {
         color: $link-color;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     .preamble {
@@ -45,12 +55,13 @@ $link-color: $green;
     p {
         font-size: 14px;
         line-height: 22px;
+
         &.with-bottom-img::after {
             content: '';
             display: block;
             height: 125px;
             margin: 20px 0;
-            background-image: url('../img/storage_log_cabin_room.jpg');
+            background-image: url('./img/storage_log_cabin_room.jpg');
             background-repeat: no-repeat;
             background-position: 0 81%;
             background-size: 100%;
@@ -70,16 +81,16 @@ $link-color: $green;
         // height: 100%;
     }
 
-    .article-item {
+    .question {
         display: flex;
         margin-bottom: 40px;
     }
 
-    .article-item:first-of-type {
+    .question:first-of-type {
         margin-top: 40px;
     }
 
-    .article-item:nth-of-type(even) {
+    .question:nth-of-type(even) {
         flex-direction: row-reverse;
 
         .item-img-wrapper {
@@ -90,7 +101,7 @@ $link-color: $green;
 
     .highlight {
         border-top: 2px solid $midblue;
-        padding: 20px 0;
+        padding-top: 20px;
         font-weight: 700;
     }
 }

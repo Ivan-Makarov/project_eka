@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 $lightblue: #ecf0f4;
 $darkblue: #667799;
 $midblue: #a4bcce;
@@ -9,18 +8,27 @@ $article-background-color: $lightblue;
 $article-font-color: $darkblue;
 $link-color: $green;
 
-.title-img-wrapper {
+img {
+    vertical-align: middle;
+}
+
+div.base > img {
+    width: 100%;
+    height: auto;
+}
+
+div.base > div.info {
+    padding: 15px 30px;
     overflow: hidden;
-    height: 360px;
-    position: relative;
+    font: 300 14px/18px 'Roboto', Arial, Tahoma, Verdana, sans-serif;
 }
 
-.title-img {
-    width: 735px;
-    position: absolute;
+div.base > div.info > div.question > span,
+div.base > div.info > p.preamble {
+    font: 400 16px/20px 'Roboto', Arial, Tahoma, Verdana, sans-serif;
 }
 
-.article {
+.info {
     box-sizing: border-box;
     width: 735px;
     padding: 30px 30px 0;
@@ -32,8 +40,11 @@ $link-color: $green;
         font-weight: 300;
     }
 
-    a:hover {
+    a {
         color: $link-color;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     .preamble {
@@ -56,26 +67,29 @@ $link-color: $green;
 
     .item-img {
         position: absolute;
+
         &.img-chill {
             top: -70px;
         }
+
         &.img-garden {
             left: -80px;
             height: 105%;
         }
     }
 
-    .article-item {
+    .question {
         display: flex;
         margin-bottom: 40px;
     }
 
-    .article-item:first-of-type {
+    .question:first-of-type {
         margin-top: 40px;
     }
 
-    .article-item:nth-of-type(even) {
+    .question:nth-of-type(even) {
         flex-direction: row-reverse;
+
         .item-img-wrapper {
             margin-right: 0;
             margin-left: 20px;
@@ -85,7 +99,7 @@ $link-color: $green;
     .item-no-photo {
         padding-left: 140px;
         background-repeat: no-repeat;
-        background-image: url('../img/balcony_extra.png');
+        background-image: url('./img/balcony_extra.png');
     }
 
     .attention {
@@ -93,13 +107,15 @@ $link-color: $green;
         padding: 25px 120px 10px 140px;
         background-color: $midblue2;
         background-repeat: no-repeat;
-        background-image: url('../img/balcony_attention.png');
+        background-image: url('./img/balcony_attention.png');
         background-position: 40px 50%;
+
         span {
             text-transform: uppercase;
             letter-spacing: 0.2em;
             font-weight: 700;
         }
+
         p {
             font-style: italic;
             margin-top: 5px;
@@ -108,7 +124,7 @@ $link-color: $green;
 
     .highlight {
         border-top: 2px solid $midblue;
-        padding: 20px 40px 20px 0;
+        padding: 20px 40px 0 0;
         font-weight: 700;
     }
 }
